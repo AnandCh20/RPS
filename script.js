@@ -158,10 +158,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         Bscissor.style.left="750px";
         Bscissor.style.top="200px";
-
-        Brock.style.display='block';
-        Bpaper.style.display='block';
-        Bscissor.style.display='block';
     });
   
     restartBtn.addEventListener('click', function () {
@@ -180,9 +176,9 @@ document.addEventListener('DOMContentLoaded', function () {
         l1.style.display="block";
         l2.style.display="block";
         l3.style.display="block";  
-        paperButton.style.display="block";
-        scissorsButton.style.display="block";
-        rockButton.style.display="block";
+        paperButton.style.display="inline-block";
+        scissorsButton.style.display="inline-block";
+        rockButton.style.display="inline-block";
         rules.style.display='block';
         closeBtn.style.display= 'block';  
         hints.style.display = 'block';
@@ -190,6 +186,14 @@ document.addEventListener('DOMContentLoaded', function () {
         prompt2.style.fontSize = "15px";
         restartBtn.style.width = "110px";
         restartBtn.style.height = "25px";
+        rockButton.style.top="200px";
+        rockButton.style.left="350px";
+        
+        scissorsButton.style.top="200px";
+        scissorsButton.style.left="750px";
+    
+        paperButton.style.top="400px";
+        paperButton.style.left="540px";
         game=true;
     }
   
